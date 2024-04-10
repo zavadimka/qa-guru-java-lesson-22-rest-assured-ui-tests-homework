@@ -1,6 +1,6 @@
 package com.zavadimka.tests;
 
-import com.zavadimka.tests.extensions.WithLogin;
+import com.zavadimka.extensions.WithLogin;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 

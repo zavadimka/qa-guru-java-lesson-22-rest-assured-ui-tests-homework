@@ -1,4 +1,4 @@
-package com.zavadimka.tests.extensions;
+package com.zavadimka.extensions;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 

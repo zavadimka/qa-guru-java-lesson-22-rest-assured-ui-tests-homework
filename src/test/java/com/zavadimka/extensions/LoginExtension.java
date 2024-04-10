@@ -1,4 +1,4 @@
-package com.zavadimka.tests.extensions;
+package com.zavadimka.extensions;
 
 import com.zavadimka.models.UserSuccessfulLoginRequestModel;
 import com.zavadimka.models.UserSuccessfulLoginResponseModel;
