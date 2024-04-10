@@ -18,9 +18,10 @@ public class ProfilePageTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     void profilePageBookListShouldBeEmpty() {
 
-        step("### Open Profile page and verify page title", () -> {
+        step("### Open Profile page, verify page title and the UserName of the Authorized User", () -> {
             profilePage.openPage()
-                            .verifyPageTitle();
+                    .verifyPageTitle()
+                    .verifyUserName();
         });
 
         step("### Check the Book List", () -> {

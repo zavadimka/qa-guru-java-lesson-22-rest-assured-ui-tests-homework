@@ -29,9 +29,9 @@ public class LoginExtension implements BeforeEachCallback {
                 given()
                         .spec(baseRequestSpec)
                         .body(userLoginData)
-                    .when()
+                        .when()
                         .post("/Account/v1/Login")
-                    .then()
+                        .then()
                         .spec(userSuccessfulLoginResponseSpecWithStatusCode200)
                         .extract().as(UserSuccessfulLoginResponseModel.class)
         );

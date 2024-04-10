@@ -3,10 +3,7 @@ package com.zavadimka.config;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({
-        "system:properties",
-        "classpath:config/${driver}.properties"
-})
+@Config.Sources({"system:properties", "classpath:config/${driver}.properties"})
 public interface WebDriverConfig extends Config {
 
     @Key("webdriver.remoteUrl")

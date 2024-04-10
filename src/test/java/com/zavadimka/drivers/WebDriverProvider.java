@@ -27,10 +27,7 @@ public class WebDriverProvider {
             case "remote": {
                 remote = webDriverConfig.getDriverRemoteUrl();
                 DesiredCapabilities capabilities = new DesiredCapabilities();
-                capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                        "enableVNC", true,
-                        "enableVideo", true
-                ));
+                capabilities.setCapability("selenoid:options", Map.<String, Object>of("enableVNC", true, "enableVideo", true));
                 browserCapabilities = capabilities;
             }
             case "local": {
@@ -46,14 +43,8 @@ public class WebDriverProvider {
         System.setProperty("driver", driver);
     }
 
-    public static void printWebDriverConfig(){
+    public static void printWebDriverConfig() {
         System.out.println("The test is run with the following WebDriver parameters:");
-        System.out.printf("WebDriver: %s\n" +
-                        "Remote URL: %s\n" +
-                        "Base URL: %s\n" +
-                        "Browser: %s\n" +
-                        "Version: %s\n" +
-                        "Window size: %s%n",
-                driver, remote, baseUrl, browser, browserVersion, browserSize);
+        System.out.printf("WebDriver: %s\n" + "Remote URL: %s\n" + "Base URL: %s\n" + "Browser: %s\n" + "Version: %s\n" + "Window size: %s%n", driver, remote, baseUrl, browser, browserVersion, browserSize);
     }
 }

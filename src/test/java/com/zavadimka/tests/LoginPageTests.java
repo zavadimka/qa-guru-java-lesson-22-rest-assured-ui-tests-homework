@@ -18,8 +18,7 @@ public class LoginPageTests extends TestBase {
     void profilePageBookListShouldBeEmpty() {
 
         step("### Open Login page and check login header visibility and verify text", () -> {
-            loginPage.openPage()
-                    .checkloginHeader();
+            loginPage.openPage().checkloginHeader();
         });
 
         step("### Check the Login Form", () -> {
